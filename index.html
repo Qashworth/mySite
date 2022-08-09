@@ -12,6 +12,16 @@
 		<link rel="icon" href="images\icon.svg">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-logs-v4.js"></script>
+		<script>
+		  window.DD_LOGS &&
+			DD_LOGS.init({
+			  clientToken: '<pubc8a21931bbd69fe87c7c102a7d7db85b>',
+			  site: '<DATADOG_SITE>',
+			  forwardErrorsToLogs: true,
+			  sampleRate: 100,
+			})
+		</script>
 	</head>
 	<body class="is-preload">
 
