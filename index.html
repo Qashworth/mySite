@@ -14,8 +14,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-logs-v4.js"></script>
 		<script>
-			window.DD_LOGS &&
-			DD_LOGS.init({
+			window.DD_LOGS && DD_LOGS.init({
 				clientToken: 'pub8606701fe663d85c88f1048d9d4315ca',
 				site: 'datadoghq.com',
 				service: 'quins-site',
@@ -30,6 +29,7 @@
 				useCrossSiteSessionCookie: false,
 			})
 		</script>
+		<!--
 		<script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-rum-v4.js"></script>
 		<script>
 			window.DD_RUM && window.DD_RUM.init({
@@ -48,9 +48,9 @@
 				useSecureSessionCookie: false,
 				useCrossSiteSessionCookie: false,
 			});
-			window.DD_RUM &&
-			window.DD_RUM.startSessionReplayRecording();
+			window.DD_RUM && window.DD_RUM.startSessionReplayRecording();
 		</script>
+		-->
 	</head>
 	<body class="is-preload">
 
