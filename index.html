@@ -20,8 +20,13 @@
 				site: 'datadoghq.com',
 				service: 'quins-site',
 				env: 'prod',
+				// Specify a version number to identify the deployed version of your application in Datadog 
+				version: '1.0.10',
 				forwardErrorsToLogs: true,
 				sampleRate: 100,
+				trackSessionAcrossSubdomains: false,
+				useSecureSessionCookie: false,
+				useCrossSiteSessionCookie: false,
 			})
 		</script>
 		<script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-rum-v4.js"></script>
@@ -33,11 +38,14 @@
 				service: 'quins-site',
 				env: 'prod',
 				// Specify a version number to identify the deployed version of your application in Datadog 
-				// version: '1.0.5',
+				version: '1.0.10',
 				sampleRate: 100,
 				premiumSampleRate: 100,
 				trackInteractions: true,
 				defaultPrivacyLevel: 'mask-user-input',
+				trackSessionAcrossSubdomains: false,
+				useSecureSessionCookie: false,
+				useCrossSiteSessionCookie: false,
 			});
 			window.DD_RUM &&
 			window.DD_RUM.startSessionReplayRecording();
